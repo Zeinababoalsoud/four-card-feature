@@ -1,0 +1,166 @@
+@font-face {
+    font-family:'Poppins' ;
+    src: url("../assets/Fonts/Poppins-Light.ttf");
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: 'Poppins';
+    src: url("../assets//Fonts/Poppins-Bold.ttf");
+    font-weight: bold;
+}
+
+html,body{
+    width: 100%;
+    height:100%;
+    margin: 0;
+    font-family: 'Poppins';
+    padding:10px;
+    box-sizing: border-box;
+}
+
+#MainContainer{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 30px;
+}
+
+#TittleDiv{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 15px;
+}
+
+
+#TittleHeader{
+    margin: 0;
+}
+
+#Paragraph{
+    text-align: center;
+    margin: 0;
+    width: 50%;
+ color: hsl(229, 6%, 66%);
+}
+
+#tittleLabel{
+font-size: 30px;
+}
+
+
+#BlocksDiv{
+    width: 100%;
+    height: 70%;
+    display: flex;
+    justify-content: space-around;
+    max-width: 1500px;
+}
+
+.CommonBlockDiv{
+    width: 30%;
+    height: 100%;
+    display: flex;
+}
+
+#MiddleDiv{
+    flex-direction: column;
+    justify-content: center;
+    row-gap: 30px
+    ;
+}
+
+.InnerChildDiv{
+    width: 100%;
+    height: 250px;
+    border-radius: 10px;
+    display: flex;
+    align-items: end;
+    box-shadow: 8px 9px 42px 0px rgba(92,92,92,0.47);
+
+}
+
+#AquaDiv{
+    background-color: hsl(180, 62%, 55%);
+    border-top: 2px solid hsl(180, 62%, 55%);
+
+}
+
+#RedDiv{
+    background-color: hsl(0, 78%, 62%);
+    border-top: 2px solid hsl(0, 78%, 62%);
+}
+
+#LeftDiv,#RightDiv{
+    align-items: center;
+}
+
+
+.InnerChildDiv>div{
+    width: 100%;
+    height: 99%;
+    background-color: hsl(0, 0%, 98%);
+    box-sizing: border-box;
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+}
+
+#YellowDiv{
+    background-color: hsl(34, 97%, 64%);
+    border-top: 2px solid hsl(34, 97%, 64%);
+}
+
+#BlueDiv{
+    background-color: hsl(212, 86%, 64%);
+    border-top: 2px solid hsl(212, 86%, 64%);
+}
+
+.BlockDivTittle{
+    font-weight: 800;
+    font-size: 20px;
+    color:hsl(234, 12%, 34%);
+}
+
+.BlockDivPragrapgh{
+    color: hsl(229, 6%, 66%);
+    font-size: 15px;
+}
+
+.CommonImgs{
+    width: 70px;
+    height: 70px;
+}
+
+.DivImg{
+    width: 90%;
+    display: flex;
+    justify-content: end;
+}
+
+@media only screen and (max-width: 850px) {
+    #MainContainer{
+        row-gap: 70px;
+        height:unset;
+    }
+    #tittleLabel,#TittleHeader{
+        font-size: medium;
+    }
+    #BlocksDiv{
+        flex-direction: column;
+        align-items: center;
+        row-gap: 20px;
+    }
+    .CommonBlockDiv {
+        width: 85%;
+    }
+    #Paragraph{
+        width: 80%;
+    }
+}
